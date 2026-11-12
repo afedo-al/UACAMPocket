@@ -14,6 +14,32 @@
 		D10252B930A2A97A00A5CDF5 /* UACAMPocketTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10252B830A2A97A00A5CDF5 /* UACAMPocketTests.swift */; };
 		D10252C330A2A97A00A5CDF5 /* UACAMPocketUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10252C230A2A97A00A5CDF5 /* UACAMPocketUITests.swift */; };
 		D10252C530A2A97A00A5CDF5 /* UACAMPocketUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10252C430A2A97A00A5CDF5 /* UACAMPocketUITestsLaunchTests.swift */; };
+		D10252D730A2AC4500A5CDF5 /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10252D630A2AC4500A5CDF5 /* Usuario.swift */; };
+		D10252D930A2AC5900A5CDF5 /* Oportunidad.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10252D830A2AC5900A5CDF5 /* Oportunidad.swift */; };
+		D10252DB30A2AC6A00A5CDF5 /* Postulacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10252DA30A2AC6A00A5CDF5 /* Postulacion.swift */; };
+		D145A2C430A54751009B8115 /* RegistroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D145A2C330A54751009B8115 /* RegistroView.swift */; };
+		D145A2C530A54A3A009B8115 /* InicioSesionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D146F83730A44D500015FD1B /* InicioSesionView.swift */; };
+		D146F83A30A44E3C0015FD1B /* PocketDemoAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D146F83930A44E3C0015FD1B /* PocketDemoAuthService.swift */; };
+		D1EFC62F30A2F3DC006148CC /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EFC62E30A2F3DC006148CC /* AppTheme.swift */; };
+		D1EFC63130A2F495006148CC /* PocketCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EFC63030A2F495006148CC /* PocketCard.swift */; };
+		D1EFC63330A2F557006148CC /* PocketPrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EFC63230A2F557006148CC /* PocketPrimaryButton.swift */; };
+		D1EFC63530A2F645006148CC /* PocketSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EFC63430A2F645006148CC /* PocketSectionHeader.swift */; };
+		D1EFC63730A2F6FA006148CC /* PocketQuickAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EFC63630A2F6FA006148CC /* PocketQuickAction.swift */; };
+		D1EFC63930A2F728006148CC /* PocketStatusBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EFC63830A2F728006148CC /* PocketStatusBadge.swift */; };
+		D1EFC63B30A2F798006148CC /* PocketEmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EFC63A30A2F798006148CC /* PocketEmptyState.swift */; };
+		D1EFC63D30A2F908006148CC /* PocketDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EFC63C30A2F908006148CC /* PocketDataService.swift */; };
+		D1EFC63F30A2FA53006148CC /* InicioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EFC63E30A2FA53006148CC /* InicioView.swift */; };
+		D1EFC64130A2FB34006148CC /* CalendarioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EFC64030A2FB34006148CC /* CalendarioView.swift */; };
+		D1EFC64330A2FCEB006148CC /* OportunidadesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EFC64230A2FCEB006148CC /* OportunidadesView.swift */; };
+		D1EFC64530A2FD5D006148CC /* OportunidadDetalleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EFC64430A2FD5D006148CC /* OportunidadDetalleView.swift */; };
+		D1EFC64730A300C5006148CC /* PerfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EFC64630A300C5006148CC /* PerfilView.swift */; };
+		D1EFC64930A30155006148CC /* TramitesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EFC64830A30155006148CC /* TramitesView.swift */; };
+		D1EFC64B30A30261006148CC /* DocentesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EFC64A30A30261006148CC /* DocentesView.swift */; };
+		D1EFC64D30A30369006148CC /* CrearOportunidadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EFC64C30A30369006148CC /* CrearOportunidadView.swift */; };
+		D1EFC64F30A30591006148CC /* SeleccionRolView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1EFC64E30A30591006148CC /* SeleccionRolView.swift */; };
+		D1F4AA8830A40E9E00246297 /* CampusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F4AA8730A40E9E00246297 /* CampusView.swift */; };
+		D1F4AA8B30A4123C00246297 /* TareasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F4AA8A30A4123C00246297 /* TareasView.swift */; };
+		D1F4AA8D30A4153100246297 /* PocketTaskService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F4AA8C30A4153100246297 /* PocketTaskService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +70,32 @@
 		D10252BE30A2A97A00A5CDF5 /* UACAMPocketUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UACAMPocketUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D10252C230A2A97A00A5CDF5 /* UACAMPocketUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UACAMPocketUITests.swift; sourceTree = "<group>"; };
 		D10252C430A2A97A00A5CDF5 /* UACAMPocketUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UACAMPocketUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D10252D630A2AC4500A5CDF5 /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
+		D10252D830A2AC5900A5CDF5 /* Oportunidad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oportunidad.swift; sourceTree = "<group>"; };
+		D10252DA30A2AC6A00A5CDF5 /* Postulacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Postulacion.swift; sourceTree = "<group>"; };
+		D145A2C330A54751009B8115 /* RegistroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistroView.swift; sourceTree = "<group>"; };
+		D146F83730A44D500015FD1B /* InicioSesionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioSesionView.swift; sourceTree = "<group>"; };
+		D146F83930A44E3C0015FD1B /* PocketDemoAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketDemoAuthService.swift; sourceTree = "<group>"; };
+		D1EFC62E30A2F3DC006148CC /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		D1EFC63030A2F495006148CC /* PocketCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketCard.swift; sourceTree = "<group>"; };
+		D1EFC63230A2F557006148CC /* PocketPrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketPrimaryButton.swift; sourceTree = "<group>"; };
+		D1EFC63430A2F645006148CC /* PocketSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketSectionHeader.swift; sourceTree = "<group>"; };
+		D1EFC63630A2F6FA006148CC /* PocketQuickAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketQuickAction.swift; sourceTree = "<group>"; };
+		D1EFC63830A2F728006148CC /* PocketStatusBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketStatusBadge.swift; sourceTree = "<group>"; };
+		D1EFC63A30A2F798006148CC /* PocketEmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketEmptyState.swift; sourceTree = "<group>"; };
+		D1EFC63C30A2F908006148CC /* PocketDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketDataService.swift; sourceTree = "<group>"; };
+		D1EFC63E30A2FA53006148CC /* InicioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InicioView.swift; sourceTree = "<group>"; };
+		D1EFC64030A2FB34006148CC /* CalendarioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarioView.swift; sourceTree = "<group>"; };
+		D1EFC64230A2FCEB006148CC /* OportunidadesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OportunidadesView.swift; sourceTree = "<group>"; };
+		D1EFC64430A2FD5D006148CC /* OportunidadDetalleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OportunidadDetalleView.swift; sourceTree = "<group>"; };
+		D1EFC64630A300C5006148CC /* PerfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilView.swift; sourceTree = "<group>"; };
+		D1EFC64830A30155006148CC /* TramitesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TramitesView.swift; sourceTree = "<group>"; };
+		D1EFC64A30A30261006148CC /* DocentesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocentesView.swift; sourceTree = "<group>"; };
+		D1EFC64C30A30369006148CC /* CrearOportunidadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearOportunidadView.swift; sourceTree = "<group>"; };
+		D1EFC64E30A30591006148CC /* SeleccionRolView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeleccionRolView.swift; sourceTree = "<group>"; };
+		D1F4AA8730A40E9E00246297 /* CampusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusView.swift; sourceTree = "<group>"; };
+		D1F4AA8A30A4123C00246297 /* TareasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TareasView.swift; sourceTree = "<group>"; };
+		D1F4AA8C30A4153100246297 /* PocketTaskService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PocketTaskService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +146,12 @@
 		D10252A630A2A97600A5CDF5 /* UACAMPocket */ = {
 			isa = PBXGroup;
 			children = (
-				D10252A730A2A97600A5CDF5 /* UACAMPocketApp.swift */,
+				D10252D130A2ABE100A5CDF5 /* App */,
+				D10252D230A2ABFE00A5CDF5 /* Core */,
+				D10252D530A2AC2300A5CDF5 /* Models */,
+				D10252DC30A2AC7700A5CDF5 /* Features */,
+				D10252E430A2AD3500A5CDF5 /* Services */,
+				D10252E330A2AD3100A5CDF5 /* Resources */,
 				D10252A930A2A97600A5CDF5 /* ContentView.swift */,
 				D10252AB30A2A97A00A5CDF5 /* Assets.xcassets */,
 				D10252AD30A2A97A00A5CDF5 /* Preview Content */,
@@ -125,6 +182,156 @@
 				D10252C430A2A97A00A5CDF5 /* UACAMPocketUITestsLaunchTests.swift */,
 			);
 			path = UACAMPocketUITests;
+			sourceTree = "<group>";
+		};
+		D10252D130A2ABE100A5CDF5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				D10252A730A2A97600A5CDF5 /* UACAMPocketApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		D10252D230A2ABFE00A5CDF5 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D10252D330A2AC0E00A5CDF5 /* Theme */,
+				D10252D430A2AC1400A5CDF5 /* Components */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D10252D330A2AC0E00A5CDF5 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				D1EFC62E30A2F3DC006148CC /* AppTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		D10252D430A2AC1400A5CDF5 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D1EFC63030A2F495006148CC /* PocketCard.swift */,
+				D1EFC63230A2F557006148CC /* PocketPrimaryButton.swift */,
+				D1EFC63430A2F645006148CC /* PocketSectionHeader.swift */,
+				D1EFC63630A2F6FA006148CC /* PocketQuickAction.swift */,
+				D1EFC63830A2F728006148CC /* PocketStatusBadge.swift */,
+				D1EFC63A30A2F798006148CC /* PocketEmptyState.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		D10252D530A2AC2300A5CDF5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D10252D630A2AC4500A5CDF5 /* Usuario.swift */,
+				D10252D830A2AC5900A5CDF5 /* Oportunidad.swift */,
+				D10252DA30A2AC6A00A5CDF5 /* Postulacion.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D10252DC30A2AC7700A5CDF5 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				D1F4AA8930A4122E00246297 /* Tareas */,
+				D1F4AA8630A40DF900246297 /* Campus */,
+				D10252DF30A2ACC500A5CDF5 /* Inicio */,
+				D10252DE30A2AC9500A5CDF5 /* Calendario */,
+				D10252DD30A2AC9000A5CDF5 /* Oportunidades */,
+				D10252E230A2AD0900A5CDF5 /* Tramites */,
+				D10252E130A2ACF900A5CDF5 /* Docentes */,
+				D10252E030A2ACF600A5CDF5 /* Perfil */,
+			);
+			name = Features;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		D10252DD30A2AC9000A5CDF5 /* Oportunidades */ = {
+			isa = PBXGroup;
+			children = (
+				D1EFC64230A2FCEB006148CC /* OportunidadesView.swift */,
+				D1EFC64430A2FD5D006148CC /* OportunidadDetalleView.swift */,
+			);
+			name = Oportunidades;
+			sourceTree = "<group>";
+		};
+		D10252DE30A2AC9500A5CDF5 /* Calendario */ = {
+			isa = PBXGroup;
+			children = (
+				D1EFC64030A2FB34006148CC /* CalendarioView.swift */,
+			);
+			name = Calendario;
+			sourceTree = "<group>";
+		};
+		D10252DF30A2ACC500A5CDF5 /* Inicio */ = {
+			isa = PBXGroup;
+			children = (
+				D1EFC63E30A2FA53006148CC /* InicioView.swift */,
+			);
+			name = Inicio;
+			sourceTree = "<group>";
+		};
+		D10252E030A2ACF600A5CDF5 /* Perfil */ = {
+			isa = PBXGroup;
+			children = (
+				D1EFC64630A300C5006148CC /* PerfilView.swift */,
+				D1EFC64E30A30591006148CC /* SeleccionRolView.swift */,
+				D146F83730A44D500015FD1B /* InicioSesionView.swift */,
+				D145A2C330A54751009B8115 /* RegistroView.swift */,
+			);
+			name = Perfil;
+			sourceTree = "<group>";
+		};
+		D10252E130A2ACF900A5CDF5 /* Docentes */ = {
+			isa = PBXGroup;
+			children = (
+				D1EFC64A30A30261006148CC /* DocentesView.swift */,
+				D1EFC64C30A30369006148CC /* CrearOportunidadView.swift */,
+			);
+			name = Docentes;
+			sourceTree = "<group>";
+		};
+		D10252E230A2AD0900A5CDF5 /* Tramites */ = {
+			isa = PBXGroup;
+			children = (
+				D1EFC64830A30155006148CC /* TramitesView.swift */,
+			);
+			name = Tramites;
+			sourceTree = "<group>";
+		};
+		D10252E330A2AD3100A5CDF5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D10252E430A2AD3500A5CDF5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D1EFC63C30A2F908006148CC /* PocketDataService.swift */,
+				D1F4AA8C30A4153100246297 /* PocketTaskService.swift */,
+				D146F83930A44E3C0015FD1B /* PocketDemoAuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		D1F4AA8630A40DF900246297 /* Campus */ = {
+			isa = PBXGroup;
+			children = (
+				D1F4AA8730A40E9E00246297 /* CampusView.swift */,
+			);
+			name = Campus;
+			sourceTree = "<group>";
+		};
+		D1F4AA8930A4122E00246297 /* Tareas */ = {
+			isa = PBXGroup;
+			children = (
+				D1F4AA8A30A4123C00246297 /* TareasView.swift */,
+			);
+			name = Tareas;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +465,33 @@
 			buildActionMask = 2147483647;
 			files = (
 				D10252AA30A2A97600A5CDF5 /* ContentView.swift in Sources */,
+				D1EFC63530A2F645006148CC /* PocketSectionHeader.swift in Sources */,
+				D10252DB30A2AC6A00A5CDF5 /* Postulacion.swift in Sources */,
+				D1F4AA8830A40E9E00246297 /* CampusView.swift in Sources */,
+				D145A2C530A54A3A009B8115 /* InicioSesionView.swift in Sources */,
+				D1EFC63B30A2F798006148CC /* PocketEmptyState.swift in Sources */,
+				D1EFC63930A2F728006148CC /* PocketStatusBadge.swift in Sources */,
+				D1EFC64B30A30261006148CC /* DocentesView.swift in Sources */,
+				D1EFC63330A2F557006148CC /* PocketPrimaryButton.swift in Sources */,
+				D10252D930A2AC5900A5CDF5 /* Oportunidad.swift in Sources */,
+				D1EFC63F30A2FA53006148CC /* InicioView.swift in Sources */,
+				D1EFC64930A30155006148CC /* TramitesView.swift in Sources */,
+				D1EFC63130A2F495006148CC /* PocketCard.swift in Sources */,
+				D1EFC64D30A30369006148CC /* CrearOportunidadView.swift in Sources */,
+				D1EFC62F30A2F3DC006148CC /* AppTheme.swift in Sources */,
+				D1EFC63730A2F6FA006148CC /* PocketQuickAction.swift in Sources */,
 				D10252A830A2A97600A5CDF5 /* UACAMPocketApp.swift in Sources */,
+				D1EFC64130A2FB34006148CC /* CalendarioView.swift in Sources */,
+				D1EFC64F30A30591006148CC /* SeleccionRolView.swift in Sources */,
+				D10252D730A2AC4500A5CDF5 /* Usuario.swift in Sources */,
+				D1EFC64330A2FCEB006148CC /* OportunidadesView.swift in Sources */,
+				D1EFC63D30A2F908006148CC /* PocketDataService.swift in Sources */,
+				D1EFC64730A300C5006148CC /* PerfilView.swift in Sources */,
+				D145A2C430A54751009B8115 /* RegistroView.swift in Sources */,
+				D1F4AA8B30A4123C00246297 /* TareasView.swift in Sources */,
+				D1F4AA8D30A4153100246297 /* PocketTaskService.swift in Sources */,
+				D1EFC64530A2FD5D006148CC /* OportunidadDetalleView.swift in Sources */,
+				D146F83A30A44E3C0015FD1B /* PocketDemoAuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

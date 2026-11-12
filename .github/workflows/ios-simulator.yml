@@ -1,0 +1,104 @@
+# Managed by iOS-Windows-Toolkit
+# Official actions: https://github.com/actions/checkout/releases/tag/v7.0.1
+# https://github.com/actions/upload-artifact/releases/tag/v7.0.1
+name: iOS Simulator
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+jobs:
+  simulator:
+    runs-on: macos-latest
+    timeout-minutes: 45
+    env:
+      CONTAINER_KIND: 'project'
+      CONTAINER_PATH: 'UACAMPocket.xcodeproj'
+      REQUESTED_SCHEME: ''
+    steps:
+      - uses: actions/checkout@v7.0.1
+        with:
+          persist-credentials: false
+      - name: Show macOS and Xcode
+        run: |
+          sw_vers
+          xcodebuild -version
+      - name: Validate scheme, build and package simulator app
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, os, pathlib, plistlib, subprocess, sys
+
+          def fail(message):
+              sys.exit('[ERROR] ' + message)
+
+          kind = os.environ['CONTAINER_KIND']
+          container = pathlib.Path(os.environ['CONTAINER_PATH'])
+          if kind not in ('workspace', 'project'):
+              fail('Invalid container kind. Run ios-init.')
+          if not container.is_dir() or container.suffix != '.' + ('xcworkspace' if kind == 'workspace' else 'xcodeproj'):
+              fail('Project/workspace not found: ' + str(container))
+          base = ['xcodebuild', '-' + kind, str(container)]
+          subprocess.run(base + ['-list'], check=True)
+          listing = subprocess.check_output(base + ['-list', '-json'], text=True)
+          data = json.loads(listing)
+          schemes = sorted(set(data.get(kind, {}).get('schemes', [])))
+          requested = os.environ.get('REQUESTED_SCHEME', '')
+          if requested:
+              if requested not in schemes:
+                  fail('Scheme not found: ' + requested + '\nAvailable schemes:\n' + '\n'.join(schemes))
+              scheme = requested
+          elif len(schemes) > 1:
+              fail('Multiple schemes detected.\n' + '\n'.join(schemes) + '\nRun ios-init -Scheme "Name".')
+          elif len(schemes) == 1:
+              scheme = schemes[0]
+          else:
+              fail('No schemes found. Share the scheme in Xcode and commit it.')
+          subprocess.run(base + [
+              '-scheme', scheme, '-configuration', 'Debug', '-sdk', 'iphonesimulator',
+              '-destination', 'generic/platform=iOS Simulator',
+              '-derivedDataPath', 'build/DerivedData',
+              'CODE_SIGNING_ALLOWED=NO', 'CODE_SIGNING_REQUIRED=NO',
+              'ONLY_ACTIVE_ARCH=NO', 'build'
+          ], check=True)
+          products = pathlib.Path('build/DerivedData/Build/Products')
+          def applications(folder):
+              valid = []
+              if not folder.exists():
+                  return valid
+              for app in folder.glob('*.app'):
+                  info = app / 'Info.plist'
+                  if not info.is_file():
+                      continue
+                  with info.open('rb') as file:
+                      metadata = plistlib.load(file)
+                  if metadata.get('CFBundlePackageType') == 'APPL' and 'iPhoneSimulator' in metadata.get('CFBundleSupportedPlatforms', []):
+                      if not app.name.endswith('-Runner.app'):
+                          valid.append(app)
+              return valid
+          apps = applications(products / 'Debug-iphonesimulator')
+          if not apps:
+              apps = [app for folder in products.glob('*-iphonesimulator') for app in applications(folder)]
+          if len(apps) != 1:
+              fail('Expected exactly one iOS Simulator app. Found:\n' + '\n'.join(map(str, apps)))
+          app = apps[0].resolve()
+          destination = pathlib.Path('dist').resolve()
+          destination.mkdir(exist_ok=True)
+          archive = destination / (app.stem + '-Simulator.zip')
+          subprocess.run(['ditto', '-c', '-k', '--keepParent', '--norsrc', str(app), str(archive)], check=True)
+          import zipfile
+          with zipfile.ZipFile(archive) as file:
+              roots = {name.split('/')[0] for name in file.namelist()}
+              if roots != {app.name}:
+                  fail('Unexpected ZIP layout: ' + repr(roots))
+          print('[OK] ' + str(archive))
+          PY
+      - name: Upload simulator ZIP
+        uses: actions/upload-artifact@v7.0.1
+        with:
+          name: ios-simulator-build
+          path: dist/*-Simulator.zip
+          if-no-files-found: error
+          retention-days: 7
